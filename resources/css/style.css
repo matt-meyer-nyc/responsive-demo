@@ -18,8 +18,9 @@ body {
   font-size: 20px;
   font-weight: 300;
   text-rendering: optimizeLegibility;
-  overflow-x: hidden;
 }
+
+body { overflow-x: hidden; }
 
 .clearfix {zoom: 1}
 .clearfix:after {
@@ -597,4 +598,28 @@ footer p {
   text-align: center;
   margin-top: 30px;
   font-size: 90%;
+}
+
+
+/*------------------*/
+/*ANIMATIONS*/
+/*------------------*/
+.js--wp-1,
+.js--wp-2,
+.js--wp-3 {
+  opacity: 0;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+.js--wp-4 {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+/*when strung together, combines both classes together at same time */
+.js--wp-1.animated,
+.js--wp-2.animated,
+.js--wp-3.animated {
+  opacity: 1;
 }
