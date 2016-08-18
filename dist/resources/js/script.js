@@ -12,7 +12,6 @@ $(document).ready(function() {
 
   /*SCROLL BUTTONS*/
   $('.js--scroll-to-plans').click(function() {
-      console.log("clicked");
     $("html,body").animate({scrollTop: $('.js--section-plans').offset().top}, 1000);
   });
   $('.js--scroll-to-start').click(function() {
@@ -35,6 +34,7 @@ $(document).ready(function() {
       }
     });
   });
+
   /*ANIMATE WITH SCROLL*/
   $('.js--wp-1').waypoint(function(direction) {
     $('.js--wp-1').addClass('animated fadeIn');
@@ -56,6 +56,22 @@ $(document).ready(function() {
   }, {
     offset: '50%'
   })
+
+    /*MOBILE NAVIGATION*/
+  $('.js--nav-icon').click(function() {
+    const nav = $('.js--main-nav');
+    const icon =$('.js--nav-icon i');
+
+    nav.slideToggle(200);
+
+    if (icon.hasClass('ion-navicon-round')) {
+      icon.addClass('ion-close-round');
+      icon.removeClass('ion-navicon-round');
+    } else {
+      icon.addClass('ion-navicon-round');
+      icon.removeClass('ion-close-round');
+    }
+  });
 
 
 });//end document.ready
