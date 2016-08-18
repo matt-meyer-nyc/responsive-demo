@@ -558,6 +558,19 @@ input[type=checkbox] {
 
 *:focus {outline: none;}
 
+.form-messages {
+  width: 70%;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 3px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.success { background-color: rgba(34, 196, 65, 0.8); }
+
+.error { background-color: rgba(255, 0, 0, 0.5);}
+
 
 /* ----------------------------------------------- */
 /* FOOTER */
