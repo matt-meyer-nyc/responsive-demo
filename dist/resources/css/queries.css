@@ -62,22 +62,24 @@
   }
 
   .main-nav {
-     float: none;
-     position: absolute;
-     z-index: 8888;
-     width: 100%;
-     height: 100vh;
-     margin: 0;
-     margin-left: -2%;
-     color: rgba(230, 126, 34, 0.92);
-     text-align: center;
-     padding-top: 20vh;
+    float: left;
+    /*margin-top: -0px;*/
+    margin-left: 25px;
+ }
+
+ .float {
+   float:left;
+   padding: -20;
+   margin-top: 10px;
  }
 
  .main-nav li {
       display: block;
       margin-left: 0;
       font-size: 110%;
+      padding-right: 10px;
+      padding: 0px;
+      margin: 10px;
   }
 
 
@@ -85,24 +87,30 @@
   .main-nav li a:visited {
       display: block;
       border: 0;
-      padding: 10px 0;
-      font-size: 100%;
+      padding: 0px;
+      margin: 0px;
+      /*font-size: 100%;*/
   }
 
-  .sticky .main-nav { margin-top: 0; }
+  .sticky .main-nav { margin-top: 5px; }
 
+  .sticky .main-nav li {
+        margin-top: 10px;
+   }
 
-   .sticky .main-nav li a:link,
-   .sticky .main-nav li a:visited {
-       padding: 10px 0;
-       color: #fff;
+  .sticky .main-nav li a:link,
+  .sticky .main-nav li a:visited {
+       padding: 4px 0;
+       color: #555;
    }
 
 
 
-   .sticky .mobile-nav-icon { margin-top: 10px; }
-   .sticky .mobile-nav-icon i { color: #555; }
-   .sticky .mobile-nav-icon i.ion-close-round { color: #fff; }
+  .sticky .mobile-nav-icon { margin-top: 10px; }
+  .sticky .mobile-nav-icon i { color: #555; }
+  .sticky .mobile-nav-icon i.ion-close-round {
+     color: #555;
+    }
 
   h1 { font-size: 180%; }
   h2 { font-size: 150%; }

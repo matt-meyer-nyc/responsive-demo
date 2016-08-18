@@ -1,3 +1,3 @@
-// window.onlaod = function () {
-//   console.log("working");
-// }
+window.onlaod = function () {
+  console.log("working");
+}
