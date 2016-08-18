@@ -2,7 +2,7 @@
   "name": "responsive-demo-deploy",
   "version": "1.0.0",
   "description": "This demo was created with guidance from Jonas Schmedtmann's 'Build Responsive Real World Websites with HTLM5 and CSS3'",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
       "production": "webpack -p",
       "start-dev": "webpack-dev-server --progress --inline --hot",

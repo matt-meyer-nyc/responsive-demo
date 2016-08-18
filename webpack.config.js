@@ -1,7 +1,7 @@
 var path = require('path');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
-  template: path.join(__dirname, '/dist/index.html'),
+  template: path.join(__dirname, '/app/index.html'),
   filename: 'index.html',
   inject: 'body'
 })
@@ -9,7 +9,7 @@ var HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
 module.exports = {
   devtool: 'eval',
   entry: [
-    './dist/index.html'
+    './app/index.js'
   ],
   output: {
     path: path.join(__dirname, 'dist'),
